@@ -1,0 +1,1329 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "gpuType": "T4",
+      "authorship_tag": "ABX9TyPaDv9+IL3BPua0Pk/CdYOa",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU",
+    "widgets": {
+      "application/vnd.jupyter.widget-state+json": {
+        "da6708b6fe1b46e18c5657d608e8a80e": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HBoxModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HBoxModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HBoxView",
+            "box_style": "",
+            "children": [
+              "IPY_MODEL_ffba63951b164345aa79521cf9af3260",
+              "IPY_MODEL_8c696db95cb24216a58a93f0ae93d768",
+              "IPY_MODEL_c51739fa012f4175ae3b2f35a9d65f20"
+            ],
+            "layout": "IPY_MODEL_1c6176c091524a4ab8c4e44824f15175"
+          }
+        },
+        "ffba63951b164345aa79521cf9af3260": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_d33f898655284657adb3f7260b212039",
+            "placeholder": "​",
+            "style": "IPY_MODEL_7aa6bb174ffd49a79e70fc6172a85b9e",
+            "value": "Loading weights: 100%"
+          }
+        },
+        "8c696db95cb24216a58a93f0ae93d768": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "FloatProgressModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "FloatProgressModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "ProgressView",
+            "bar_style": "success",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_e16c191515b34715a46887ff0ad5d0be",
+            "max": 291,
+            "min": 0,
+            "orientation": "horizontal",
+            "style": "IPY_MODEL_b1309d37eac2454e9cfa6b5913698a2e",
+            "value": 291
+          }
+        },
+        "c51739fa012f4175ae3b2f35a9d65f20": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "HTMLModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_dom_classes": [],
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "HTMLModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/controls",
+            "_view_module_version": "1.5.0",
+            "_view_name": "HTMLView",
+            "description": "",
+            "description_tooltip": null,
+            "layout": "IPY_MODEL_18176fb948f54f3a9b85077ff2d6ec06",
+            "placeholder": "​",
+            "style": "IPY_MODEL_b5b30231699f4a00b25a9635207709f5",
+            "value": " 291/291 [00:48&lt;00:00, 192.80it/s, Materializing param=model.norm.weight]"
+          }
+        },
+        "1c6176c091524a4ab8c4e44824f15175": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "d33f898655284657adb3f7260b212039": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "7aa6bb174ffd49a79e70fc6172a85b9e": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        },
+        "e16c191515b34715a46887ff0ad5d0be": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "b1309d37eac2454e9cfa6b5913698a2e": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "ProgressStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "ProgressStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "bar_color": null,
+            "description_width": ""
+          }
+        },
+        "18176fb948f54f3a9b85077ff2d6ec06": {
+          "model_module": "@jupyter-widgets/base",
+          "model_name": "LayoutModel",
+          "model_module_version": "1.2.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/base",
+            "_model_module_version": "1.2.0",
+            "_model_name": "LayoutModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "LayoutView",
+            "align_content": null,
+            "align_items": null,
+            "align_self": null,
+            "border": null,
+            "bottom": null,
+            "display": null,
+            "flex": null,
+            "flex_flow": null,
+            "grid_area": null,
+            "grid_auto_columns": null,
+            "grid_auto_flow": null,
+            "grid_auto_rows": null,
+            "grid_column": null,
+            "grid_gap": null,
+            "grid_row": null,
+            "grid_template_areas": null,
+            "grid_template_columns": null,
+            "grid_template_rows": null,
+            "height": null,
+            "justify_content": null,
+            "justify_items": null,
+            "left": null,
+            "margin": null,
+            "max_height": null,
+            "max_width": null,
+            "min_height": null,
+            "min_width": null,
+            "object_fit": null,
+            "object_position": null,
+            "order": null,
+            "overflow": null,
+            "overflow_x": null,
+            "overflow_y": null,
+            "padding": null,
+            "right": null,
+            "top": null,
+            "visibility": null,
+            "width": null
+          }
+        },
+        "b5b30231699f4a00b25a9635207709f5": {
+          "model_module": "@jupyter-widgets/controls",
+          "model_name": "DescriptionStyleModel",
+          "model_module_version": "1.5.0",
+          "state": {
+            "_model_module": "@jupyter-widgets/controls",
+            "_model_module_version": "1.5.0",
+            "_model_name": "DescriptionStyleModel",
+            "_view_count": null,
+            "_view_module": "@jupyter-widgets/base",
+            "_view_module_version": "1.2.0",
+            "_view_name": "StyleView",
+            "description_width": ""
+          }
+        }
+      }
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/KanishThakkar/Llama2-7b-chat-finetune/blob/main/Llama2-fine_tuning\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Import All neccesary Libraries\n",
+        "### **peft - Perameter efficient transfer learning**\n",
+        "Parameter-Efficient Transfer Learning (PETL) is a way of fine-tuning a pretrained model by training only a small subset of parameters instead of updating all model weights.\n",
+        "\n",
+        "### bitsandbytes - Use to impliment quantization and LoRA"
+      ],
+      "metadata": {
+        "id": "XL6W4AVkRbos"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 10,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7uMORio7PwP_",
+        "outputId": "e31089b8-658b-4a70-d5a5-3280366f7602"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m116.9/116.9 kB\u001b[0m \u001b[31m8.5 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[2K     \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m314.9/314.9 kB\u001b[0m \u001b[31m23.2 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25h  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\n",
+            "  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\n",
+            "  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m244.2/244.2 kB\u001b[0m \u001b[31m15.8 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m72.9/72.9 kB\u001b[0m \u001b[31m8.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m92.5/92.5 MB\u001b[0m \u001b[31m9.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m7.4/7.4 MB\u001b[0m \u001b[31m24.0 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m77.4/77.4 kB\u001b[0m \u001b[31m3.4 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m566.4/566.4 kB\u001b[0m \u001b[31m10.1 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25h  \u001b[1;31merror\u001b[0m: \u001b[1msubprocess-exited-with-error\u001b[0m\n",
+            "  \n",
+            "  \u001b[31m×\u001b[0m \u001b[32mBuilding wheel for tokenizers \u001b[0m\u001b[1;32m(\u001b[0m\u001b[32mpyproject.toml\u001b[0m\u001b[1;32m)\u001b[0m did not run successfully.\n",
+            "  \u001b[31m│\u001b[0m exit code: \u001b[1;36m1\u001b[0m\n",
+            "  \u001b[31m╰─>\u001b[0m See above for output.\n",
+            "  \n",
+            "  \u001b[1;35mnote\u001b[0m: This error originates from a subprocess, and is likely not a problem with pip.\n",
+            "  Building wheel for tokenizers (pyproject.toml) ... \u001b[?25l\u001b[?25herror\n",
+            "\u001b[31m  ERROR: Failed building wheel for tokenizers\u001b[0m\u001b[31m\n",
+            "\u001b[0m\u001b[31mERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (tokenizers)\u001b[0m\u001b[31m\n",
+            "\u001b[0m"
+          ]
+        }
+      ],
+      "source": [
+        "!pip install -q accelerate==0.21.0 peft==0.4.0 bitsandbytes==0.40.2 transformers==4.31.0 trl==0.4.7"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Import all libraries"
+      ],
+      "metadata": {
+        "id": "ns9yU-mMTMfC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import os\n",
+        "import torch\n",
+        "from datasets import load_dataset\n",
+        "# Hugging Face Datasets library\n",
+        "# Used to load datasets easily from Hugging Face Hub or local files\n",
+        "# Example: load_dataset(\"imdb\")\n",
+        "\n",
+        "from transformers import (\n",
+        "    AutoModelForCausalLM,      # Loads pretrained causal language models\n",
+        "    AutoTokenizer,\n",
+        "    BitsAndBytesConfig,        # Used for quantization settings\n",
+        "                               # Example: 4-bit/8-bit loading to reduce memory\n",
+        "\n",
+        "    HfArgumentParser,          # Parses command line arguments into Python objects\n",
+        "                               # Helpful for training scripts\n",
+        "\n",
+        "    TrainingArguments,         # Stores training settings\n",
+        "                               # Example: batch size, epochs, learning rate\n",
+        "\n",
+        "    pipeline,                  # Easy interface for inference\n",
+        "                               # Example: text generation after training\n",
+        "\n",
+        "    logging,                   # Controls Hugging Face logging messages\n",
+        "                               # Hide warnings or show training info\n",
+        ")\n",
+        "\n",
+        "\n",
+        "from peft import (\n",
+        "    LoraConfig,                # Defines LoRA settings\n",
+        "                               # Example:\n",
+        "                               # rank (r),\n",
+        "                               # alpha,\n",
+        "                               # dropout,\n",
+        "                               # target modules\n",
+        "\n",
+        "    PeftModel                  # Loads/combines LoRA adapters\n",
+        "                               # Used after fine-tuning\n",
+        ")\n",
+        "\n",
+        "\n",
+        "\n",
+        "from trl import SFTTrainer\n",
+        "# TRL = Transformer Reinforcement Learning library\n",
+        "\n",
+        "# SFTTrainer = Supervised Fine Tuning Trainer\n",
+        "# Simplifies fine-tuning LLMs on instruction datasets\n",
+        "# Handles:\n",
+        "# - tokenization\n",
+        "# - training loop\n",
+        "# - batching\n",
+        "# - saving model\n",
+        "\n",
+        "# Often used for:\n",
+        "# Alpaca tuning\n",
+        "# Chatbot tuning\n",
+        "# Llama fine tuning"
+      ],
+      "metadata": {
+        "id": "a_JY_EIDSNcz"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### In case of Llama 2, the following prompt template is used for the chat models\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "9JIyct0GUhsG"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "![image.png](data:image/png;base64,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)"
+      ],
+      "metadata": {
+        "id": "AhSYuXeXUotl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "The special tokens mean:\n",
+        "\n",
+        "* < s > → start of sequence\n",
+        "* [INS ] → beginning of user instruction\n",
+        "* [/INST] → end of instruction\n",
+        "* << SYS >> ... << /SYS >> → system prompt (behavior/personality)"
+      ],
+      "metadata": {
+        "id": "okiRz7w_Uswt"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Dataset\n",
+        "* Original dataset -  https://huggingface.co/datasets/timdettmers/openassistant-guanaco\n",
+        "* Dataset following the Llama 2 template with 1k sample - https://huggingface.co/datasets/mlabonne/guanaco-llama2-1k"
+      ],
+      "metadata": {
+        "id": "M20CJL_SXGr-"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## What is LLama2\n",
+        "* Llama 2 is a Large Language Model (LLM) released by Meta AI in 2023. It is trained on huge amounts of text data and can understand and generate human-like language.It contain 70B parameters."
+      ],
+      "metadata": {
+        "id": "ZdbEpV2lXp34"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Why we need to fine tune Llama2\n",
+        "* Free Google Colab offers a 15GB Graphics Card (Limited Resources --> Barely enough to store Llama 2–7b’s weights)\n",
+        "\n",
+        "* We also need to consider the overhead due to optimizer states, gradients, and forward activations\n",
+        "\n",
+        "* Full fine-tuning is not possible here: we need parameter-efficient fine-tuning (PEFT) techniques like LoRA or QLoRA."
+      ],
+      "metadata": {
+        "id": "vNreVQt-X8w5"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Step -1\n"
+      ],
+      "metadata": {
+        "id": "1d_goMtGYgNU"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "* Load a llama-2-7b-chat-hf model (chat model)\n",
+        "* Train it on the mlabonne/guanaco-llama2-1k (1,000 samples), which will produce our fine-tuned model Llama-2-7b-chat-finetune"
+      ],
+      "metadata": {
+        "id": "pr9ePXGkYpsG"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from types import new_class\n",
+        "# The llama model that you are using\n",
+        "model_name = \"NousResearch/Llama-2-7b-chat-hf\"\n",
+        "\n",
+        "# the instruction dataset that you are using\n",
+        "dataset_name = \"mlabonne/guanaco-llama2-1k\"\n",
+        "\n",
+        "# Fined Tune model name\n",
+        "new_model = \"Llama-2-7b-chat-finetune\""
+      ],
+      "metadata": {
+        "id": "rG9hPY5AYeB9"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "new_model = \"/content/results\""
+      ],
+      "metadata": {
+        "id": "zQx8yxKYYCR-"
+      },
+      "execution_count": 14,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### QloRa parameters"
+      ],
+      "metadata": {
+        "id": "37Y8uVOwZ7Um"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Rank or Lora attention dimention\n",
+        "Lora_r = 64\n",
+        "# alpha parameter for lora scaling\n",
+        "Lora_alpha = 16\n",
+        "#Dropout\n",
+        "Lora_dropout = 0.1"
+      ],
+      "metadata": {
+        "id": "mzA19D_NZ-YA"
+      },
+      "execution_count": 3,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### BitsandBytes perameter (Use for quantization)"
+      ],
+      "metadata": {
+        "id": "6sGVbyOtbNc8"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "use_4bit = True  #Load the pretrained model in 4-bit precision instead of full precision.\n",
+        "\n",
+        "# compute datatype for 4but model\n",
+        "bnb_4bit_compute_dtype = 'float16' #The model is stored in 4-bit but computations still need higher precision. stores in 4 bit but do computation in 16 but full precision..\n",
+        "\n",
+        "# Quantization type\n",
+        "bnb_4bit_quant_dtype = 'nf4' # Determines how weights are compressed into 4 bits.\n",
+        "\n",
+        "\n",
+        "use_nested_quant = False\n"
+      ],
+      "metadata": {
+        "id": "tpP6RN4daYaq"
+      },
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Training arguments perameters"
+      ],
+      "metadata": {
+        "id": "jlcCBoBE69aH"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Output directory where the model predictions and checkpoints will be stored\n",
+        "output_dir = \"./results\"\n",
+        "\n",
+        "# number of training epochs\n",
+        "num_training_epochs = 1\n",
+        "\n",
+        "# Enable fp16/bf16 training (set bf16 to True with an A100)\n",
+        "fp16 = False\n",
+        "bf16 = False\n",
+        "\n",
+        "# batch size per gpu for training\n",
+        "per_device_train_batch_size = 1\n",
+        "\n",
+        "# batch size per gpu for testing or evaluating\n",
+        "per_device_eval_batch_size =4\n",
+        "\n",
+        "# Number of update steps to accumulate the gradients for\n",
+        "gradient_accumulation_steps = 4 # Update weights after every batch.\n",
+        "\n",
+        "# Enable gradient checkpointing\n",
+        "gradient_checkpointing = True #The model stores fewer activations and recomputes them during backpropagation.\n",
+        "\n",
+        "# Maximum gradient normal (gradient clipping)\n",
+        "max_grad_norm = 0.3     #Gradient clipping limits gradient size.\n",
+        "\n",
+        "# Initial learning rate (AdamW optimizer)\n",
+        "learning_rate = 2e-4   # How much weights change after each update.\n",
+        "\n",
+        "# Weight decay to apply to all layers except bias/LayerNorm weights\n",
+        "weight_decay = 0.001  # Adds penalty for large weights. Reduce overfitting\n",
+        "\n",
+        "# Optimizer to use\n",
+        "optim = \"paged_adamw_32bit\"\n",
+        "\n",
+        "# Learning rate schedule\n",
+        "lr_scheduler_type = \"cosine\" # find similarity and stable convergence\n",
+        "\n",
+        "# Number of training steps (overrides num_train_epochs)\n",
+        "max_steps = -1 #Ignore max steps and use epochs instead.\n",
+        "\n",
+        "# Ratio of steps for a linear warmup (from 0 to learning rate)\n",
+        "warmup_ratio = 0.03 #Slowly increase LR at beginning\n",
+        "\n",
+        "\n",
+        "# Group sequences into batches with same length\n",
+        "\n",
+        "# Saves memory and speeds up training considerably\n",
+        "group_by_length = True\n",
+        "\n",
+        "# Save checkpoint every X updates steps\n",
+        "save_steps = 0\n",
+        "\n",
+        "# Log every X updates steps\n",
+        "logging_steps = 25\n"
+      ],
+      "metadata": {
+        "id": "z6eEd6nM7A1Z"
+      },
+      "execution_count": 5,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### SFT (Supervised fine tuning)\n"
+      ],
+      "metadata": {
+        "id": "3MYJGZPA14Ik"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Maximum sequence length to use\n",
+        "max_seq_length = None #Maximum number of tokens allowed as input.\n",
+        "\n",
+        "# Pack multiple short examples in the same input sequence to increase efficiency\n",
+        "packing = False # Do not combine short examples\n",
+        "\n",
+        "# Load the entire model on the GPU 0\n",
+        "device_map = {\"\": 0}  # put whole model on first gpu"
+      ],
+      "metadata": {
+        "id": "pUNJdi7N19cC"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Step-4"
+      ],
+      "metadata": {
+        "id": "PMYFogTi9iSe"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#### 1. Load the dataset for training\n",
+        "#### 2. Then configure bitsandbyts for 4bit quantization\n",
+        "#### 3. Load the Llama 2 model in 4-bit precision on a GPU with the corresponding tokenizer.\n",
+        "#### 4. Now load or QLoRA, regular training parameters, and passing everything to the SFTTrainer. The training can finally start!"
+      ],
+      "metadata": {
+        "id": "wWchF1dH9lCq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# load the dataset\n",
+        "dataset = load_dataset(dataset_name, split=\"train\")\n",
+        "\n",
+        "# Load tokenizer and model with QLoRA configuration\n",
+        "compute_dtype = getattr(torch, bnb_4bit_compute_dtype)\n",
+        "\n",
+        "# Configure Bits and Byts\n",
+        "bnb_config = BitsAndBytesConfig(\n",
+        "    load_in_4bit=use_4bit,\n",
+        "    bnb_4bit_quant_type=bnb_4bit_quant_dtype,\n",
+        "    bnb_4bit_compute_dtype=compute_dtype,\n",
+        "    bnb_4bit_use_double_quant=use_nested_quant,\n",
+        ")"
+      ],
+      "metadata": {
+        "id": "cTSRFzsl-KGa",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "3ea77d8c-c85a-4e7a-f5d6-de8437491283"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_auth.py:93: UserWarning: \n",
+            "The secret `HF_TOKEN` does not exist in your Colab secrets.\n",
+            "To authenticate with the Hugging Face Hub, create a token in your settings tab (https://huggingface.co/settings/tokens), set it as secret in your Google Colab and restart your session.\n",
+            "You will be able to reuse this secret in all of your notebooks.\n",
+            "Please note that authentication is recommended but still optional to access public models or datasets.\n",
+            "  warnings.warn(\n",
+            "Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n",
+            "WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Check gpu compatibility with bfloat 16(Brain floating point 16)\n"
+      ],
+      "metadata": {
+        "id": "eQumdY1Ef5wP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "if compute_dtype == torch.float16 and use_4bit:\n",
+        "    major, _ = torch.cuda.get_device_capability()\n",
+        "    if major >= 8:\n",
+        "        print(\"=\" * 80)\n",
+        "        print(\"Your GPU supports bfloat16: accelerate training with bf16=True\")\n",
+        "        print(\"=\" * 80)"
+      ],
+      "metadata": {
+        "id": "dOqIOKJRfeEY"
+      },
+      "execution_count": 8,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install -U bitsandbytes"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fD8L_K2Dn4p3",
+        "outputId": "f5516e43-b170-4399-cfea-1b68532f5f18"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: bitsandbytes in /usr/local/lib/python3.12/dist-packages (0.49.2)\n",
+            "Requirement already satisfied: torch<3,>=2.3 in /usr/local/lib/python3.12/dist-packages (from bitsandbytes) (2.10.0+cu128)\n",
+            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from bitsandbytes) (2.0.2)\n",
+            "Requirement already satisfied: packaging>=20.9 in /usr/local/lib/python3.12/dist-packages (from bitsandbytes) (26.1)\n",
+            "Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (3.29.0)\n",
+            "Requirement already satisfied: typing-extensions>=4.10.0 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (4.15.0)\n",
+            "Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (75.2.0)\n",
+            "Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (1.14.0)\n",
+            "Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (3.6.1)\n",
+            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (3.1.6)\n",
+            "Requirement already satisfied: fsspec>=0.8.5 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (2025.3.0)\n",
+            "Requirement already satisfied: cuda-bindings==12.9.4 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (12.9.4)\n",
+            "Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (12.8.93)\n",
+            "Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (9.10.2.21)\n",
+            "Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (12.8.4.1)\n",
+            "Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (11.3.3.83)\n",
+            "Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (10.3.9.90)\n",
+            "Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (11.7.3.90)\n",
+            "Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (12.5.8.93)\n",
+            "Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (0.7.1)\n",
+            "Requirement already satisfied: nvidia-nccl-cu12==2.27.5 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (2.27.5)\n",
+            "Requirement already satisfied: nvidia-nvshmem-cu12==3.4.5 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (3.4.5)\n",
+            "Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (12.8.93)\n",
+            "Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (1.13.1.3)\n",
+            "Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.12/dist-packages (from torch<3,>=2.3->bitsandbytes) (3.6.0)\n",
+            "Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.12/dist-packages (from cuda-bindings==12.9.4->torch<3,>=2.3->bitsandbytes) (1.5.3)\n",
+            "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch<3,>=2.3->bitsandbytes) (1.3.0)\n",
+            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->torch<3,>=2.3->bitsandbytes) (3.0.3)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install -U transformers peft accelerate trl datasets"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 1000
+        },
+        "id": "Xwy3sAdloVvq",
+        "outputId": "e8cc4061-b1c8-49d8-a015-20abc772394e"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Requirement already satisfied: transformers in /usr/local/lib/python3.12/dist-packages (5.0.0)\n",
+            "Collecting transformers\n",
+            "  Downloading transformers-5.8.1-py3-none-any.whl.metadata (33 kB)\n",
+            "Requirement already satisfied: peft in /usr/local/lib/python3.12/dist-packages (0.19.1)\n",
+            "Requirement already satisfied: accelerate in /usr/local/lib/python3.12/dist-packages (1.13.0)\n",
+            "Requirement already satisfied: trl in /usr/local/lib/python3.12/dist-packages (1.4.0)\n",
+            "Requirement already satisfied: datasets in /usr/local/lib/python3.12/dist-packages (4.8.5)\n",
+            "Requirement already satisfied: huggingface-hub<2.0,>=1.5.0 in /usr/local/lib/python3.12/dist-packages (from transformers) (1.11.0)\n",
+            "Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.12/dist-packages (from transformers) (2.0.2)\n",
+            "Requirement already satisfied: packaging>=20.0 in /usr/local/lib/python3.12/dist-packages (from transformers) (26.1)\n",
+            "Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.12/dist-packages (from transformers) (6.0.3)\n",
+            "Requirement already satisfied: regex>=2025.10.22 in /usr/local/lib/python3.12/dist-packages (from transformers) (2025.11.3)\n",
+            "Requirement already satisfied: tokenizers<=0.23.0,>=0.22.0 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.22.2)\n",
+            "Requirement already satisfied: typer in /usr/local/lib/python3.12/dist-packages (from transformers) (0.24.2)\n",
+            "Requirement already satisfied: safetensors>=0.4.3 in /usr/local/lib/python3.12/dist-packages (from transformers) (0.7.0)\n",
+            "Requirement already satisfied: tqdm>=4.27 in /usr/local/lib/python3.12/dist-packages (from transformers) (4.67.3)\n",
+            "Requirement already satisfied: psutil in /usr/local/lib/python3.12/dist-packages (from peft) (5.9.5)\n",
+            "Requirement already satisfied: torch>=1.13.0 in /usr/local/lib/python3.12/dist-packages (from peft) (2.10.0+cu128)\n",
+            "Requirement already satisfied: jinja2 in /usr/local/lib/python3.12/dist-packages (from trl) (3.1.6)\n",
+            "Requirement already satisfied: filelock in /usr/local/lib/python3.12/dist-packages (from datasets) (3.29.0)\n",
+            "Requirement already satisfied: pyarrow>=21.0.0 in /usr/local/lib/python3.12/dist-packages (from datasets) (24.0.0)\n",
+            "Requirement already satisfied: dill<0.4.2,>=0.3.0 in /usr/local/lib/python3.12/dist-packages (from datasets) (0.3.8)\n",
+            "Requirement already satisfied: pandas in /usr/local/lib/python3.12/dist-packages (from datasets) (2.2.2)\n",
+            "Requirement already satisfied: requests>=2.32.2 in /usr/local/lib/python3.12/dist-packages (from datasets) (2.32.4)\n",
+            "Requirement already satisfied: httpx<1.0.0 in /usr/local/lib/python3.12/dist-packages (from datasets) (0.28.1)\n",
+            "Requirement already satisfied: xxhash in /usr/local/lib/python3.12/dist-packages (from datasets) (3.6.0)\n",
+            "Requirement already satisfied: multiprocess<0.70.20 in /usr/local/lib/python3.12/dist-packages (from datasets) (0.70.16)\n",
+            "Requirement already satisfied: fsspec<=2026.2.0,>=2023.1.0 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (2025.3.0)\n",
+            "Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.12/dist-packages (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (3.13.5)\n",
+            "Requirement already satisfied: anyio in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets) (4.13.0)\n",
+            "Requirement already satisfied: certifi in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets) (2026.4.22)\n",
+            "Requirement already satisfied: httpcore==1.* in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets) (1.0.9)\n",
+            "Requirement already satisfied: idna in /usr/local/lib/python3.12/dist-packages (from httpx<1.0.0->datasets) (3.13)\n",
+            "Requirement already satisfied: h11>=0.16 in /usr/local/lib/python3.12/dist-packages (from httpcore==1.*->httpx<1.0.0->datasets) (0.16.0)\n",
+            "Requirement already satisfied: hf-xet<2.0.0,>=1.4.3 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (1.4.3)\n",
+            "Requirement already satisfied: typing-extensions>=4.1.0 in /usr/local/lib/python3.12/dist-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (4.15.0)\n",
+            "Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.12/dist-packages (from requests>=2.32.2->datasets) (3.4.7)\n",
+            "Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.12/dist-packages (from requests>=2.32.2->datasets) (2.5.0)\n",
+            "Requirement already satisfied: setuptools in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (75.2.0)\n",
+            "Requirement already satisfied: sympy>=1.13.3 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (1.14.0)\n",
+            "Requirement already satisfied: networkx>=2.5.1 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (3.6.1)\n",
+            "Requirement already satisfied: cuda-bindings==12.9.4 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (12.9.4)\n",
+            "Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (12.8.93)\n",
+            "Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (9.10.2.21)\n",
+            "Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (12.8.4.1)\n",
+            "Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (11.3.3.83)\n",
+            "Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (10.3.9.90)\n",
+            "Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (11.7.3.90)\n",
+            "Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (12.5.8.93)\n",
+            "Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (0.7.1)\n",
+            "Requirement already satisfied: nvidia-nccl-cu12==2.27.5 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (2.27.5)\n",
+            "Requirement already satisfied: nvidia-nvshmem-cu12==3.4.5 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (3.4.5)\n",
+            "Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (12.8.90)\n",
+            "Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (12.8.93)\n",
+            "Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (1.13.1.3)\n",
+            "Requirement already satisfied: triton==3.6.0 in /usr/local/lib/python3.12/dist-packages (from torch>=1.13.0->peft) (3.6.0)\n",
+            "Requirement already satisfied: cuda-pathfinder~=1.1 in /usr/local/lib/python3.12/dist-packages (from cuda-bindings==12.9.4->torch>=1.13.0->peft) (1.5.3)\n",
+            "Requirement already satisfied: MarkupSafe>=2.0 in /usr/local/lib/python3.12/dist-packages (from jinja2->trl) (3.0.3)\n",
+            "Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets) (2.9.0.post0)\n",
+            "Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets) (2025.2)\n",
+            "Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.12/dist-packages (from pandas->datasets) (2026.1)\n",
+            "Requirement already satisfied: click>=8.2.1 in /usr/local/lib/python3.12/dist-packages (from typer->transformers) (8.3.3)\n",
+            "Requirement already satisfied: shellingham>=1.3.0 in /usr/local/lib/python3.12/dist-packages (from typer->transformers) (1.5.4)\n",
+            "Requirement already satisfied: rich>=12.3.0 in /usr/local/lib/python3.12/dist-packages (from typer->transformers) (13.9.4)\n",
+            "Requirement already satisfied: annotated-doc>=0.0.2 in /usr/local/lib/python3.12/dist-packages (from typer->transformers) (0.0.4)\n",
+            "Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (2.6.1)\n",
+            "Requirement already satisfied: aiosignal>=1.4.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (1.4.0)\n",
+            "Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (26.1.0)\n",
+            "Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (1.8.0)\n",
+            "Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (6.7.1)\n",
+            "Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (0.4.1)\n",
+            "Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.12/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets) (1.23.0)\n",
+            "Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.12/dist-packages (from python-dateutil>=2.8.2->pandas->datasets) (1.17.0)\n",
+            "Requirement already satisfied: markdown-it-py>=2.2.0 in /usr/local/lib/python3.12/dist-packages (from rich>=12.3.0->typer->transformers) (4.0.0)\n",
+            "Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /usr/local/lib/python3.12/dist-packages (from rich>=12.3.0->typer->transformers) (2.20.0)\n",
+            "Requirement already satisfied: mpmath<1.4,>=1.1.0 in /usr/local/lib/python3.12/dist-packages (from sympy>=1.13.3->torch>=1.13.0->peft) (1.3.0)\n",
+            "Requirement already satisfied: mdurl~=0.1 in /usr/local/lib/python3.12/dist-packages (from markdown-it-py>=2.2.0->rich>=12.3.0->typer->transformers) (0.1.2)\n",
+            "Downloading transformers-5.8.1-py3-none-any.whl (10.6 MB)\n",
+            "\u001b[2K   \u001b[90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\u001b[0m \u001b[32m10.6/10.6 MB\u001b[0m \u001b[31m72.3 MB/s\u001b[0m eta \u001b[36m0:00:00\u001b[0m\n",
+            "\u001b[?25hInstalling collected packages: transformers\n",
+            "  Attempting uninstall: transformers\n",
+            "    Found existing installation: transformers 5.0.0\n",
+            "    Uninstalling transformers-5.0.0:\n",
+            "      Successfully uninstalled transformers-5.0.0\n",
+            "Successfully installed transformers-5.8.1\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "application/vnd.colab-display-data+json": {
+              "pip_warning": {
+                "packages": [
+                  "transformers"
+                ]
+              },
+              "id": "a77b889267704424a7e6fa609a1d4d2b"
+            }
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Load base model\n",
+        "model = AutoModelForCausalLM.from_pretrained(\n",
+        "    model_name,\n",
+        "    quantization_config=bnb_config,\n",
+        "    device_map=device_map\n",
+        ")\n",
+        "model.config.use_cache = False\n",
+        "model.config.pretraining_tp = 1\n",
+        "\n",
+        "# Load LLaMA tokenizer\n",
+        "tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)\n",
+        "tokenizer.pad_token = tokenizer.eos_token\n",
+        "tokenizer.padding_side = \"right\" # Fix weird overflow issue with fp16 training\n",
+        "# Load LoRA configuration\n",
+        "\n",
+        "peft_config = LoraConfig(\n",
+        "    lora_alpha=Lora_alpha,\n",
+        "    lora_dropout=Lora_dropout,\n",
+        "    r=Lora_r,\n",
+        "    bias=\"none\",\n",
+        "    task_type=\"CAUSAL_LM\",\n",
+        ")\n",
+        "# Set training parameters\n",
+        "training_arguments = TrainingArguments(\n",
+        "    output_dir=output_dir,\n",
+        "    num_train_epochs=num_training_epochs,\n",
+        "    per_device_train_batch_size=per_device_train_batch_size,\n",
+        "    gradient_accumulation_steps=gradient_accumulation_steps,\n",
+        "    optim=optim,\n",
+        "    save_steps=save_steps,\n",
+        "    logging_steps=logging_steps,\n",
+        "    learning_rate=learning_rate,\n",
+        "    weight_decay=weight_decay,\n",
+        "    fp16=fp16,\n",
+        "    bf16=bf16,\n",
+        "    max_grad_norm=max_grad_norm,\n",
+        "    max_steps=max_steps,\n",
+        "    warmup_ratio=warmup_ratio,\n",
+        "    lr_scheduler_type=lr_scheduler_type,\n",
+        "    report_to=\"tensorboard\"\n",
+        ")\n",
+        "\n",
+        "# Set supervised fine-tuning parameters\n",
+        "trainer = SFTTrainer(\n",
+        "    model=model,\n",
+        "    train_dataset=dataset,\n",
+        "    peft_config=peft_config,\n",
+        "    args=training_arguments,\n",
+        ")\n",
+        "\n",
+        "# Train model\n",
+        "trainer.train()\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 527,
+          "referenced_widgets": [
+            "da6708b6fe1b46e18c5657d608e8a80e",
+            "ffba63951b164345aa79521cf9af3260",
+            "8c696db95cb24216a58a93f0ae93d768",
+            "c51739fa012f4175ae3b2f35a9d65f20",
+            "1c6176c091524a4ab8c4e44824f15175",
+            "d33f898655284657adb3f7260b212039",
+            "7aa6bb174ffd49a79e70fc6172a85b9e",
+            "e16c191515b34715a46887ff0ad5d0be",
+            "b1309d37eac2454e9cfa6b5913698a2e",
+            "18176fb948f54f3a9b85077ff2d6ec06",
+            "b5b30231699f4a00b25a9635207709f5"
+          ]
+        },
+        "id": "mIWwMq-jgxdH",
+        "outputId": "4ac661f8-983d-4222-ea59-9fed44fcd3aa"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]"
+            ],
+            "application/vnd.jupyter.widget-view+json": {
+              "version_major": 2,
+              "version_minor": 0,
+              "model_id": "da6708b6fe1b46e18c5657d608e8a80e"
+            }
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stderr",
+          "text": [
+            "warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.\n",
+            "warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.\n",
+            "The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 0}.\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "    <div>\n",
+              "      \n",
+              "      <progress value='250' max='250' style='width:300px; height:20px; vertical-align: middle;'></progress>\n",
+              "      [250/250 18:02, Epoch 1/1]\n",
+              "    </div>\n",
+              "    <table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              " <tr style=\"text-align: left;\">\n",
+              "      <th>Step</th>\n",
+              "      <th>Training Loss</th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <td>25</td>\n",
+              "      <td>1.579071</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <td>50</td>\n",
+              "      <td>1.339036</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <td>75</td>\n",
+              "      <td>1.268135</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <td>100</td>\n",
+              "      <td>1.322281</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <td>125</td>\n",
+              "      <td>1.215182</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <td>150</td>\n",
+              "      <td>1.212923</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <td>175</td>\n",
+              "      <td>1.250439</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <td>200</td>\n",
+              "      <td>1.278620</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <td>225</td>\n",
+              "      <td>1.216121</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <td>250</td>\n",
+              "      <td>1.188238</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table><p>"
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "TrainOutput(global_step=250, training_loss=1.2870046157836914, metrics={'train_runtime': 1088.6436, 'train_samples_per_second': 0.919, 'train_steps_per_second': 0.23, 'total_flos': 1.679542884421632e+16, 'train_loss': 1.2870046157836914})"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Take a example to generate a prompt"
+      ],
+      "metadata": {
+        "id": "fQ38FtjDjny3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Ignore warnings\n",
+        "logging.set_verbosity(logging.CRITICAL)\n",
+        "\n",
+        "# Run text generation pipeline with our next model\n",
+        "prompt = \"What is a large language model?\"\n",
+        "pipe = pipeline(task=\"text-generation\", model=model, tokenizer=tokenizer, max_length=200)\n",
+        "result = pipe(f\"<s>[INST] {prompt} [/INST]\")\n",
+        "print(result[0]['generated_text'])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XciSmtCVhhgl",
+        "outputId": "29285dfb-0db6-4f2e-9739-8f421b74ba44"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<s>[INST] What is a large language model? [/INST] A large language model is a type of artificial intelligence (AI) model that is trained on a large dataset of text to generate language outputs that are coherent and natural-sounding. The model is trained on a large dataset of text, such as books, articles, or web pages, and uses a combination of machine learning algorithms and statistical techniques to learn the patterns and structures of language.\n",
+            "\n",
+            "The size of a large language model is typically measured in terms of the number of parameters or the amount of training data used to train the model. Large language models are typically trained on datasets that contain billions of words or more, and have tens of millions or more parameters.\n",
+            "\n",
+            "Some examples of large language models include:\n",
+            "\n",
+            "* BERT (Bidirectional Encoder Representations from Transformers): A popular large language model developed by Google that is trained on a dataset of text from the\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Reload model in FP16 and merge it with LoRA weights\n",
+        "base_model = AutoModelForCausalLM.from_pretrained(\n",
+        "    model_name,\n",
+        "    low_cpu_mem_usage=True,\n",
+        "    return_dict=True,\n",
+        "    torch_dtype=torch.float16,\n",
+        "    device_map=device_map,\n",
+        ")\n",
+        "model = PeftModel.from_pretrained(base_model, new_model)\n",
+        "model = model.merge_and_unload()\n",
+        "\n",
+        "# Reload tokenizer to save it\n",
+        "tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)\n",
+        "tokenizer.pad_token = tokenizer.eos_token\n",
+        "tokenizer.padding_side = \"right\""
+      ],
+      "metadata": {
+        "id": "QFIW6J2XcnRw"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Empty VRAM\n",
+        "del model\n",
+        "del pipe\n",
+        "del trainer\n",
+        "import gc\n",
+        "gc.collect()\n",
+        "gc.collect()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "x4zVvgUKkEjs",
+        "outputId": "63779de0-765e-4d00-d0c9-95badd495a41"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "0"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    }
+  ]
+}
